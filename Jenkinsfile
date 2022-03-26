@@ -1,7 +1,7 @@
 #!/bin/groovy
 pipeline {
   tools {
-    nodejs 'default-nodejs'
+    nodejs 'node'
   }
   stages {
     stage('Startup') {
@@ -27,17 +27,17 @@ pipeline {
       steps { 
         script { 
           sh 'npm start' 
-          sh 'pacote npm '
+          sh 'npm pack'
         } 
       } 
     } 
     stage('Deploy') { 
       when { 
-        expressão { 
-          currentBuild.result == null || currentBuild.result == 'SUCESSO' 
+        expression { 
+          currentBuild.result == null || currentBuild.result == 'SUCCESS' 
         } 
       } 
-      passos { 
+      steps { 
         script { 
           def server = Artifactory.server 'My_Artifactory' 
           uploadArtifact(server) 
