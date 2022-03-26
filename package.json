@@ -4,7 +4,7 @@
   "description": "Testing calculator with Jest and intgration with Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Henriquegomess/testingWithJest/issues"
   },
-  "homepage": "https://github.com/Henriquegomess/testingWithJest#readme"
+  "homepage": "https://github.com/Henriquegomess/testingWithJest#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
 }
