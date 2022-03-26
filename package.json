@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest --verbose"
   },
+  "jest": {
+     "collectCoverage":true
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Henriquegomess/testingWithJest.git"
