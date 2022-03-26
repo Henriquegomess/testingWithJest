@@ -7,8 +7,8 @@
     "test": "jest --verbose"
   },
   "jest": {
-     "collectCoverage":true
-   },
+    "collectCoverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Henriquegomess/testingWithJest.git"
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Henriquegomess/testingWithJest#readme",
   "dependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "jest-junit": "^13.0.0"
   }
 }
