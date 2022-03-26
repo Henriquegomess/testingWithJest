@@ -1,7 +1,13 @@
 const { add, mul, sub, div } = require("./arith");
 
 test("2 + 3 = 5", () => {
-  expect(add(2, 3)).toBe(4);
+  try {
+    throwError();
+    // Fail test if above expression doesn't throw anything.
+    expect(add(2, 3)).toBe(4);
+  } catch (e) {
+    expect(e.message).toBe("UNKNOWN ERROR");
+  }
 });
 
 test("3 * 4 = 12", () => {
