@@ -4,10 +4,22 @@
   "description": "Testing calculator with Jest and intgration with Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose"
+    "start": "webpack",
+    "test": "jest --verbose --coverage --coverageDirectory=output/coverage/jest"
   },
   "jest": {
+    "coverageReporters": [
+      "text"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
     "collectCoverage": true
+  },
+  "jest-junit": {
+    "output": "output/coverage/junit/junit.xml",
+    "usePathForSuiteName": "true"
   },
   "repository": {
     "type": "git",
