@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack",
-    "test": "jest --verbose --coverage --coverageDirectory=output/coverage/jest"
+    "test": "jest --verbose --coverageDirectory=output/coverage/jest"
   },
   "jest": {
     "coverageReporters": [
