@@ -1,0 +1,24 @@
+{
+  "name": "testingwithjest",
+  "version": "1.0.0",
+  "description": "Testing calculator with Jest and intgration with Jenkins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henriquegomess/testingWithJest.git"
+  },
+  "keywords": [
+    "jest",
+    "calculator",
+    "jenkins"
+  ],
+  "author": "Henrique Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henriquegomess/testingWithJest/issues"
+  },
+  "homepage": "https://github.com/Henriquegomess/testingWithJest#readme"
+}
